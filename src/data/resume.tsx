@@ -214,9 +214,9 @@ export const DATA = {
         },
 
       ],
-      image: "",
-      video:
-        "/cubing Kerala.mp4",
+      image: "/ck.png",
+      width: 1080,
+      height: 1080
     },
     // {
     //   title: "Magic UI",
