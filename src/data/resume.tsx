@@ -4,14 +4,14 @@ import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 export const DATA = {
   name: "Allen John",
   initials: "AJ",
-  url: "https://dillion.io",
+  url: "https://allenjohn.vercel.app/",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Full stack developer, Speedcuber",
   summary:
     "Enthusiastic and curious full stack developer with a triple major bachelor's degree in Computer Application. I'm all about the latest tech, currently learning TypeScript and Next.js. You can also find me solving Rubik's cubes at lightning speed or organizing cube competitions. I love tackling problems and embracing new challenges.",
-  // avatarUrl: "/me.png",
+  avatarUrl: "/Profile picture (1).png",
   frontendSkills: [
     "React",
     "Javascript",
