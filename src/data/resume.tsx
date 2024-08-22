@@ -96,7 +96,7 @@ export const DATA = {
       title: "MEA(R)N Stack - Course",
       logoUrl: "/luminartechnolab(1).png",
       start: "Sept 2023",
-      end: "April 2024",
+      end: "March 2024",
       description:
         "Gained hands-on experience with a variety of frontend technologies, including React, Angular, JavaScript, HTML, and CSS. Developed backend skills using Node.js, Express, MongoDB, and Mongoose. Successfully completed multiple projects during this comprehensive 6-month course, demonstrating a strong command in both frontend and backend development.",
     },
