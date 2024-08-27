@@ -11,7 +11,7 @@ export const DATA = {
     "Full stack developer, Speedcuber",
   summary:
     "Enthusiastic and curious full stack developer with a triple major bachelor's degree in Computer Application. I'm all about the latest tech, currently learning TypeScript and Next.js. You can also find me solving Rubik's cubes at lightning speed or organizing cube competitions. I love tackling problems and embracing new challenges.",
-  avatarUrl: "/Profile picture (1).png",
+  avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "React",
     "Javascript",
