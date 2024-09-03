@@ -84,7 +84,7 @@ export const DATA = {
       title: "Full stack developer - Intern",
       logoUrl: "/luminarhub.png",
       start: "June 2024",
-      end: "Present",
+      end: "Sept 2024",
       description:
         "Completed weekly tasks ahead of schedule, quickly mastering Google Authentication, Nodemailer, and Twilio. Developed a personal web app for my cubing community.",
     },
@@ -182,6 +182,12 @@ export const DATA = {
     //   start: "2012",
     //   end: "2016",
     // },
+  ],
+  certificates: [
+    {
+      name: "NACTET",
+      grade: "A+"
+    }
   ],
   projects: [
     {
