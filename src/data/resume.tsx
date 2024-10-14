@@ -19,6 +19,7 @@ export const DATA = {
     "Javascript",
     "Tailwind",
     "Shadcn UI",
+    "Magic UI",
     "NextUI",
     "Lottie JSON",
     "HTML",
@@ -40,8 +41,8 @@ export const DATA = {
     // { href: "#", icon: PencilLine, label: "Notes" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    // email: "hello@example.com",
+    // tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
@@ -57,26 +58,26 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
+      // X: {
+      //   name: "X",
+      //   url: "https://dub.sh/dillion-twitter",
+      //   icon: Icons.x,
 
-        navbar: false,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: false,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
+      //   navbar: false,
+      // },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://dub.sh/dillion-youtube",
+      //   icon: Icons.youtube,
+      //   navbar: false,
+      // },
+      // email: {
+      //   name: "Send Email",
+      //   url: "#",
+      //   icon: Icons.email,
 
-        navbar: false,
-      },
+      //   navbar: false,
+      // },
     },
   },
 
@@ -198,7 +199,7 @@ export const DATA = {
     {
       title: "Cubing Kerala",
       href: "https://cubingkeralaorg.vercel.app/",
-      dates: "August 2024 - September 2024",
+      dates: "August 2024 - October 2024",
       active: true,
       description:
         "As an active member of the cubing community in Kerala, this web application was developed to help cubers track upcoming and past competitions and their rankings. It enhances a previous application built with JavaScript, React, and Node, which suffered from slow performance on a free hosting service. The new version uses Next.js for improved deployment and TypeScript for type safety, integrating World Cube Association authentication and their APIs to provide essential data, keeping the community informed and engaged.",
@@ -211,12 +212,13 @@ export const DATA = {
         "WCA API's",
         "Tailwind",
         "Shadcn UI",
+        "Magic UI",
         "Lottie JSON",
       ],
       links: [
         {
           type: "Website",
-          href: "https://cubingkeralaorg.vercel.app",
+          href: "https://cubingkerala.org",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -226,7 +228,7 @@ export const DATA = {
         },
 
       ],
-      image: "/cubingkeralaorg.png",
+      image: "/cubingkerala.png",
       width: 1080,
       height: 1080
     },
