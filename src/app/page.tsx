@@ -41,7 +41,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold mb-3">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -64,7 +64,6 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
               />
@@ -84,7 +83,6 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
@@ -134,9 +132,10 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Here is my favorite.
+                <p className="text-muted-foreground text-md/relaxed md:text-md/relaxed xl:text-xl/relaxed">
+                  Here are my favorite projects.
                 </p>
+                <span className="text-muted-foreground/70 text-sm/relaxed md:text-md/relaxed xl:text-md/relaxed">(or the only ones I&apos;ve worked so far)</span>
               </div>
             </div>
           </BlurFade>
@@ -151,6 +150,7 @@ export default function Page() {
                     href={project.href}
                     key={project.title}
                     title={project.title}
+                    subtitle={project.subtitle ?? ""}
                     description={project.description}
                     dates={project.dates}
                     tags={project.technologies}
