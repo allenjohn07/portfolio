@@ -10,7 +10,6 @@ import Link from "next/link";
 import React from "react";
 
 interface ResumeCardProps {
-  logoUrl: string;
   altText: string;
   title: string;
   subtitle?: string;
@@ -20,42 +19,22 @@ interface ResumeCardProps {
   description?: string;
 }
 export const ResumeCard = ({
-  logoUrl,
-  altText,
   title,
   subtitle,
   href,
   badges,
   period,
-  description,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
-      setIsExpanded(!isExpanded);
-    }
-  };
 
   return (
     <Link
       href={href || "#"}
       className="block cursor-pointer"
-      onClick={handleClick}
     >
       <Card className="flex">
-        <div className="flex-none">
-          <Avatar className="border size-8 lg:size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
-          </Avatar>
-        </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="flex-grow items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
@@ -80,29 +59,12 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className="text-xs max-w-[100px] md:max-w-full sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="text-xs text-nowrap md:max-w-full sm:text-sm tabular-nums text-muted-foreground">
                 {period}
               </div>
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: isExpanded ? 1 : 0,
-
-                height: isExpanded ? "auto" : 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
-            >
-              {description}
-            </motion.div>
-          )}
         </div>
       </Card>
     </Link>
