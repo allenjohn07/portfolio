@@ -13,6 +13,9 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/allen-profile.png"
+  },
   metadataBase: new URL(DATA.url),
   title: {
     default: DATA.name,
