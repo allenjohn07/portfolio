@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full stack developer, Speedcuber",
   summary:
-    "Enthusiastic and curious full stack developer with a triple major bachelor's degree in Computer Application. I'm all about the latest tech, currently learning TypeScript and Next.js. You can also find me solving Rubik's cubes at lightning speed or organizing cube competitions. I love tackling problems and embracing new challenges.",
+    "Full-stack developer fueled by curiosity, caffeine, and a triple major in Computer Applications, currently based in Calgary, Alberta, where I&apos;m pursuing a diploma in Software Development. I&apos;m diving into the wonders (and occasional frustrations) of TypeScript and Next.js, while also getting started with Python and tackling the easiest problems on LeetCode — aiming to one day solve them without a little help from AI. Outside the dev world, I&apos;m usually speed-solving Rubik&apos;s cubes or organizing cube competitions.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
@@ -61,7 +61,6 @@ export const DATA = {
     {
       company: "Freelance",
       badges: [],
-      href: "",
       location: "Remote",
       title: "Freelance Web developer",
       logoUrl: "",
@@ -70,21 +69,17 @@ export const DATA = {
     },
     {
       company: "Luminar Technohub",
-      href: "https://www.luminartechnohub.com/",
       badges: [],
       location: "Kakkanad, Kochi",
       title: "Full stack developer - Intern",
-      logoUrl: "/luminarhub.png",
       start: "June 2024",
       end: "Sept 2024",
     },
     {
       company: "Luminar Technolab",
       badges: [],
-      href: "https://www.luminartechnolab.com/",
       location: "Kakkanad, Kochi",
       title: "MEA(R)N Stack - Course",
-      logoUrl: "/luminartechnolab(1).png",
       start: "Sept 2023",
       end: "March 2024",
     }
@@ -92,17 +87,13 @@ export const DATA = {
   education: [
     {
       school: "Southern Alberta Institute of Technology",
-      href: "https://www.sait.ca/",
       degree: "Diploma in Software Development",
-      logoUrl: "/sait.svg",
       start: "2025",
       end: "2026",
     },
     {
       school: "Mahatma Gandhi University",
-      href: "https://www.mgu.ac.in",
       degree: "Bachelor of Science in Computer Application",
-      logoUrl: "/mguni.png",
       start: "2019",
       end: "2022",
     }
@@ -116,6 +107,7 @@ export const DATA = {
   projects: [
     {
       title: "Cubing Kerala",
+      subtitle: "",
       href: "https://cubingkerala.org/",
       dates: "August 2024 - Present",
       active: true,
@@ -152,6 +144,7 @@ export const DATA = {
     },
     {
       title: "SpeedCubers India",
+      subtitle: "In progress",
       href: "https://speedcubersindia.com/",
       dates: "March 2025 - Present",
       active: true,
