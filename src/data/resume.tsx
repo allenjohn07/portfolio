@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full stack developer, Speedcuber",
   summary:
-    "Full-stack developer fueled by curiosity, caffeine, and a triple major in Computer Applications, currently based in Calgary, Alberta, where I&apos;m pursuing a diploma in Software Development. I&apos;m diving into the wonders (and occasional frustrations) of TypeScript and Next.js, while also getting started with Python and tackling the easiest problems on LeetCode — aiming to one day solve them without a little help from AI. Outside the dev world, I&apos;m usually speed-solving Rubik&apos;s cubes or organizing cube competitions.",
+    "Full-stack developer who loves coffee and learning new things. I studied Computer Science without much direction at first, but somewhere along the way, I got hooked. Been self-learning ever since, and now I&apos;m doing a diploma in Software Development at SAIT, Calgary. I&apos;ve been building web apps with modern tech stacks, helped create websites for Cubing Kerala and Speedcubers India. Right now, I&apos;m working on more projects and have a few ideas I&apos;m hoping to bring to life. When I&apos;m not coding, I&apos;m probably solving Rubik&apos;s cubes.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
@@ -112,7 +112,7 @@ export const DATA = {
       dates: "August 2024 - Present",
       active: true,
       description:
-        "As an active member of the cubing community in Kerala, this web application was developed to help cubers track upcoming and past competitions and their rankings. It enhances a previous application built with JavaScript, React, and Node, which suffered from slow performance on a free hosting service. The new version uses Next.js for improved deployment and TypeScript for type safety, integrating World Cube Association authentication and their APIs to provide essential data, keeping the community informed and engaged.",
+        "Being part of the cubing community in Kerala, I wanted to build something that&apos;d actually help cubers stay updated on competitions and rankings. This is a revamped version of an older app I built with JavaScript, React, and Node, which was painfully slow on free hosting. So I rebuilt it with Next.js and TypeScript for better performance and reliability. It connects with the World Cube Association&apos;s authentication and APIs to pull in competition data, making it easier for the community to stay in the loop.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -149,7 +149,7 @@ export const DATA = {
       dates: "March 2025 - Present",
       active: true,
       description:
-        "Being part of a 4-member team, I'm responsible for the frontend development of this web application for SpeedCubers India, an organization currently seeking WCA regional recognition. I'm also actively contributing to the backend of this application. The platform features a national ranking system for Indian cubers and includes a live feed of upcoming and past competitions organized by SpeedCubers India. We are aiming to launch the platform in the coming months.",
+        "Part of a 4-member team building the web application for SpeedCubers India, an organization working towards WCA regional recognition. I&apos;m handling most of the frontend and also jumping into backend work when needed. We&apos;re creating a platform with national rankings for Indian cubers and a live feed of upcoming and past competitions. Hoping to launch it in the next few months and see it help grow the cubing community across India.",
       technologies: [
         "Next.js",
         "TypeScript",
