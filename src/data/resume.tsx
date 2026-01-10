@@ -7,8 +7,7 @@ export const DATA = {
   url: "https://allenjohn.vercel.app/",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Full stack developer, Speedcuber",
+  description: "Full stack developer, Speedcuber",
   summary:
     "Full-stack developer who loves coffee and learning new things. I studied Computer Science without much direction at first, but somewhere along the way, I got hooked. Been self-learning ever since, and now I&apos;m doing a diploma in Software Development at SAIT, Calgary. I&apos;ve been building web apps with modern tech stacks, helped create websites for Cubing Kerala and Speedcubers India. Right now, I&apos;m working on more projects and have a few ideas I&apos;m hoping to bring to life. When I&apos;m not coding, I&apos;m probably solving Rubik&apos;s cubes.",
   avatarUrl: "/allen-profile.png",
@@ -26,12 +25,12 @@ export const DATA = {
     "CSS",
   ],
   backendSkills: [
-    "Prisma",
-    "PostgreSQL",
     "Node",
     "Express",
     "Rest-API",
-    "Mongodb",
+    "Prisma",
+    "MongoDB",
+    "PostgreSQL",
     "Firebase",
   ],
   navbar: [
@@ -53,7 +52,7 @@ export const DATA = {
         icon: Icons.linkedin,
 
         navbar: true,
-      }
+      },
     },
   },
 
@@ -65,7 +64,7 @@ export const DATA = {
       title: "Freelance Web developer",
       logoUrl: "",
       start: "Sept 2023",
-      end: "Present"
+      end: "Present",
     },
     {
       company: "Luminar Technohub",
@@ -82,7 +81,7 @@ export const DATA = {
       title: "MEA(R)N Stack - Course",
       start: "Sept 2023",
       end: "March 2024",
-    }
+    },
   ],
   education: [
     {
@@ -96,13 +95,13 @@ export const DATA = {
       degree: "Bachelor of Science in Computer Application",
       start: "2019",
       end: "2022",
-    }
+    },
   ],
   certificates: [
     {
       name: "NACTET",
-      grade: "A+"
-    }
+      grade: "A+",
+    },
   ],
   projects: [
     {
@@ -136,11 +135,10 @@ export const DATA = {
           href: "https://github.com/cubingkeralaorg/cubingkerala",
           icon: <Icons.github className="size-3" />,
         },
-
       ],
       image: "/cubingkerala.png",
       width: 1080,
-      height: 1080
+      height: 1080,
     },
     {
       title: "SpeedCubers India",
@@ -172,11 +170,10 @@ export const DATA = {
           href: "https://github.com/Speed-Cubers-India",
           icon: <Icons.github className="size-3" />,
         },
-
       ],
       image: "/sci.png",
       width: 1080,
-      height: 1080
-    }
-  ]
+      height: 1080,
+    },
+  ],
 } as const;
