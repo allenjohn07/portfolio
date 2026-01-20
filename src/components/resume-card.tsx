@@ -2,11 +2,13 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
+import Link from "next/link";
 import React from "react";
 
 interface ResumeCardProps {
   altText: string;
   title: string;
+  url?: string;
   subtitle?: string;
   badges?: readonly string[];
   period: string;
@@ -14,17 +16,18 @@ interface ResumeCardProps {
 }
 export const ResumeCard = ({
   title,
+  url,
   subtitle,
   badges,
   period,
 }: ResumeCardProps) => {
-
   return (
-      <Card className="flex">
-        <div className="flex-grow items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+    <Card className="flex">
+      <div className="flex-grow text-muted-foreground items-center flex-col group">
+        <CardHeader>
+          <div className="flex items-center justify-between gap-x-2 text-base">
+            <Link href={url ?? ""} target="_blank" rel="noopener noreferrer">
+              <h3 className="inline-flex items-center justify-center hover:text-blue-400 cursor-pointer font-semibold leading-5 text-md">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -40,13 +43,16 @@ export const ResumeCard = ({
                   </span>
                 )}
               </h3>
-              <div className="text-xs text-nowrap md:max-w-full sm:text-sm tabular-nums text-muted-foreground">
-                {period}
-              </div>
+            </Link>
+            <div className="text-nowrap md:max-w-full text-sm tabular-nums text-muted-foreground">
+              {period}
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-          </CardHeader>
-        </div>
-      </Card>
+          </div>
+          {subtitle && (
+            <div className="font-sans text-sm leading-6">{subtitle}</div>
+          )}
+        </CardHeader>
+      </div>
+    </Card>
   );
 };
