@@ -49,7 +49,7 @@ export const ResumeCard = ({
             </div>
           </div>
           {subtitle && (
-            <div className="font-sans text-sm leading-6">{subtitle}</div>
+            <div className="font-sans text-sm leading-4">{subtitle}</div>
           )}
         </CardHeader>
       </div>
