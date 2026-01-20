@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Full stack developer, Speedcuber",
   summary:
-    "Aspiring full-stack developer at SAIT, Calgary, with a story that took a few turns to get here. I have a CS degree — triple major in Math, Stats, and CS, but I chose it without any real direction or passion. After college, I followed what genuinely interested me and worked as a promo editor for a Malayalam film. It was everything I loved about creativity, but the instability eventually brought me back to software development, the field I&apos;d been avoiding. This time was different though. I committed to actually learning it from the ground up, teaching myself the fundamentals until things finally made sense. A MERN stack course later, I was hooked. That&apos;s what brought me to SAIT - and the hands-on experience here has been exactly what I needed. Now I&apos;m continuing to learn through freeCodeCamp and YouTube, working on projects, and slowly making my way into open source (understanding those codebases is tough, but I&apos;ll get those PRs merged soon). I&apos;m still exploring what I want to specialize in and hoping to land a job after graduation, but for now, I&apos;m just enjoying the process of becoming better every day. When I&apos;m not coding, you&apos;ll find me solving Rubik&apos;s cubes.",
+    "Aspiring full-stack developer studying at SAIT, Calgary, Alberta, with a story that took a few turns to get here. I have a CS degree - triple major in Math, Stats, and CS, but I chose it without any real direction or passion. After college, I followed what genuinely interested me and worked as a promo editor for a Malayalam film. It was everything I loved about creativity, but the instability eventually brought me back to software development, the field I&apos;d been avoiding. This time was different though. I committed to actually learning it from the ground up, teaching myself the fundamentals until things finally made sense. A MERN stack course later, I was hooked. \n\nThat&apos;s what brought me to SAIT - and the hands-on experience here has been exactly what I needed. Now I&apos;m continuing to learn through freeCodeCamp and YouTube, working on projects, and slowly making my way into open source (understanding those codebases is tough, but I&apos;ll get those PRs merged soon). I&apos;m still exploring what I want to specialize in and hoping to land a job after graduation, but for now, I&apos;m just enjoying the process of becoming better every day. When I&apos;m not coding, you&apos;ll find me solving Rubik&apos;s cubes.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
@@ -18,9 +18,6 @@ export const DATA = {
     "Javascript",
     "Tailwind",
     "Shadcn UI",
-    "Magic UI",
-    "NextUI",
-    "Lottie JSON",
     "HTML",
     "CSS",
   ],
@@ -31,7 +28,6 @@ export const DATA = {
     "Prisma",
     "MongoDB",
     "PostgreSQL",
-    "Firebase",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -86,12 +82,14 @@ export const DATA = {
   education: [
     {
       school: "Southern Alberta Institute of Technology",
+      url: "https://www.sait.ca/",
       degree: "Diploma in Software Development",
       start: "2025",
       end: "2026",
     },
     {
       school: "Mahatma Gandhi University",
+      url: "https://www.mgu.ac.in/",
       degree: "Bachelor of Science in Computer Application",
       start: "2019",
       end: "2022",
@@ -176,4 +174,27 @@ export const DATA = {
       height: 1080,
     },
   ],
+  cubing: [
+    {
+      organization: "World Cube Association",
+      url: "https://www.worldcubeassociation.org/persons/2017JOHN14",
+      title: "Speedcuber and Organizer",
+      start: "2017",
+      end: "Present",
+    },
+    {
+      organization: "Cubing Kerala",
+      url: "https://cubingkerala.org/",
+      title: "Core Member and Website Maintainer",
+      start: "2017",
+      end: "Present",
+    },
+    {
+      organization: "SpeedCubers India",
+      url: "https://speedcubersindia.com/",
+      title: "Frontend Lead",
+      start: "2023",
+      end: "Present",
+    }
+  ]
 } as const;
