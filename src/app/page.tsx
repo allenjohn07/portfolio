@@ -47,7 +47,7 @@ export default function Page() {
           <h2 className="text-xl font-bold mb-2">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty text-md/relaxed text-muted-foreground dark:prose-invert">
+          <Markdown className="max-w-full text-muted-foreground">
             {DATA.summary}
           </Markdown>
         </BlurFade>
