@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -168,29 +169,30 @@ export default function Page() {
       </section>
 
       <section id="contact">
-        <div className="flex justify-start text-center w-full">
+        <div className="flex items-center justify-between w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <p className="mx-auto max-w-[600px] text-start md:text-lg/relaxed">
-                Connect me on{" "}
-                <Link
-                  href={DATA.contact.social.LinkedIn.url}
-                  className="hover:text-blue-400 font-semibold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </Link>{" or "}
-                <Link
-                  href={DATA.contact.social.GitHub.url}
-                  className="hover:text-blue-400 font-semibold"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </Link>{" "}
-              </p>
-            </div>
+            <p className="md:text-lg/relaxed">
+              Connect me on{" "}
+              <Link
+                href={DATA.contact.social.LinkedIn.url}
+                className="hover:text-blue-400 font-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </Link>{" or "}
+              <Link
+                href={DATA.contact.social.GitHub.url}
+                className="hover:text-blue-400 font-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </Link>
+            </p>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <ModeToggle />
           </BlurFade>
         </div>
       </section>

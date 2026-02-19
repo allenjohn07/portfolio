@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
+import { CodeIcon, HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Allen John",
@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Full stack developer, Speedcuber",
   summary:
-    "Full-stack developer in the making, currently studying at SAIT in Calgary. My journey here wasn&apos;t exactly a straight line. Started with a CS degree (triple major in Math, Stats, and CS) but honestly had no idea what I was doing or why. After graduation, I chased what actually excited me and became a promo editor for a Malayalam film. Loved every creative minute of it, until the unpredictability sent me back to the one field I&apos;d been dodging: software development.\n\nPlot twist: this time it clicked. I rolled up my sleeves, taught myself the fundamentals properly, and after a MERN stack course, something just made sense. Finally found my groove and ended up at SAIT, where the hands-on learning has been a game-changer. These days I&apos;m deep into freeCodeCamp and YouTube tutorials, building projects, and nervously eyeing open source repos (those codebases are no joke, but I&apos;ll crack them eventually). Still figuring out what I want to specialize in, hoping to land a job post-graduation, but mostly just enjoying getting 1% better each day.\n\nOh, and I can solve a Rubik&apos;s Cube in under 10 seconds. Just saying.",
+    "I&apos;m a full-stack developer currently studying Software Development at SAIT in Calgary. I started out with a CS degree back in India, took a detour into film editing for a bit, and eventually found my way back to code, this time for real.\n\nAfter a MERN stack course and an internship, things started clicking. Now I spend most of my time building projects with Next.js, TypeScript, and whatever else the project needs. I also help maintain [Cubing Kerala](https://cubingkerala.org) and work on the [SpeedCubers India](https://speedcubersindia.com/) platform.\n\nOutside of code, I&apos;m a competitive speedcuber. I can solve a Rubik&apos;s Cube in under 10 seconds.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
@@ -109,7 +109,7 @@ export const DATA = {
       dates: "August 2024 - Present",
       active: true,
       description:
-        "Being part of the cubing community in Kerala, I wanted to build something that&apos;d actually help cubers stay updated on competitions and rankings. This is a revamped version of an older app I built with JavaScript, React, and Node, which was painfully slow on free hosting. So I rebuilt it with Next.js and TypeScript for better performance and reliability. It connects with the World Cube Association&apos;s authentication and APIs to pull in competition data, making it easier for the community to stay in the loop.",
+        "A platform for the Kerala cubing community to track competitions and rankings. Originally built with React and Node, I rebuilt it from scratch with Next.js and TypeScript for better performance. It integrates with the World Cube Association&apos;s APIs and authentication to keep competition data up to date.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -145,7 +145,7 @@ export const DATA = {
       dates: "March 2025 - Present",
       active: true,
       description:
-        "Part of a 4-member team building the web application for SpeedCubers India, an organization working towards WCA regional recognition. I&apos;m handling most of the frontend and also jumping into backend work when needed. We&apos;re creating a platform with national rankings for Indian cubers and a live feed of upcoming and past competitions. Hoping to launch it in the next few months and see it help grow the cubing community across India.",
+        "Building the web platform for SpeedCubers India as part of a small team. I handle most of the frontend and chip in on the backend. The app features national rankings for Indian cubers and a live competition feed. We&apos;re working towards launch and WCA regional recognition.",
       technologies: [
         "Next.js",
         "TypeScript",
