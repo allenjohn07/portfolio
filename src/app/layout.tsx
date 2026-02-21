@@ -4,11 +4,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const fontSans = FontSans({
+const fontSans = Bricolage_Grotesque({
   subsets: ["latin"],
+  weight: "400",
   variable: "--font-sans",
 });
 
