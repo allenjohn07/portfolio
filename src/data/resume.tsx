@@ -173,6 +173,38 @@ export const DATA = {
       width: 1080,
       height: 1080,
     },
+    {
+      title: "OhShift",
+      subtitle: "Shifting Platform",
+      href: "https://ohshift.vercel.app/",
+      dates: "March 2026 - Present",
+      active: true,
+      description:
+        "A shifting platform where companies can register, invite employees, and assign shifts with automated email notifications. Built to streamline workforce management for small businesses.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Nodemailer",
+        "Tailwind",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://ohshift.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/allenjohn07/OhShift",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/OhShift.png",
+      width: 1080,
+      height: 1080,
+    },
   ],
   cubing: [
     {
