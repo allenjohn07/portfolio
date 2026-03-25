@@ -1,15 +1,12 @@
-import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon } from "lucide-react";
-
 export const DATA = {
   name: "Allen John",
   initials: "AJ",
-  url: "https://allenjohn.vercel.app/",
+  url: "https://allenjohn07.github.io/",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Full stack developer, Speedcuber",
   summary:
-    "I&apos;m a full-stack developer currently studying Software Development at SAIT in Calgary. I started out with a CS degree back in India, took a detour into film editing for a bit, and eventually found my way back to code, this time for real.\n\nAfter a MERN stack course and an internship, things started clicking. Now I spend most of my time building projects with Next.js, TypeScript, and whatever else the project needs. I also help maintain [Cubing Kerala](https://cubingkerala.org) and work on the [SpeedCubers India](https://speedcubersindia.com/) platform.\n\nOutside of code, I&apos;m a competitive speedcuber. I can solve a Rubik&apos;s Cube in under 10 seconds.",
+    "I'm a full-stack developer currently studying Software Development at SAIT in Calgary. I started out with a CS degree back in India, took a detour into film editing for a bit, and eventually found my way back to code, this time for real.\n\nAfter a MERN stack course and an internship, things started clicking. Now I spend most of my time building projects with Next.js, TypeScript, and whatever else the project needs. I also help maintain [Cubing Kerala](https://cubingkerala.org) and work on the [SpeedCubers India](https://speedcubersindia.com/) platform.\n\nOutside of code, I'm a competitive speedcuber. I can solve a Rubik's Cube in under 10 seconds.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
@@ -29,29 +26,20 @@ export const DATA = {
     "MongoDB",
     "PostgreSQL",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "#projects", icon: CodeIcon, label: "Projects" },
-  ],
   contact: {
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/allenjohn07",
-        icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/allenjohn07/",
-        icon: Icons.linkedin,
-
         navbar: true,
       },
     },
   },
-
   work: [
     {
       company: "Freelance",
@@ -109,7 +97,7 @@ export const DATA = {
       dates: "August 2024 - Present",
       active: true,
       description:
-        "A platform for the Kerala cubing community to track competitions and rankings. Originally built with React and Node, I rebuilt it from scratch with Next.js and TypeScript for better performance. It integrates with the World Cube Association&apos;s APIs and authentication to keep competition data up to date.",
+        "A platform for the Kerala cubing community to track competitions and rankings. Originally built with React and Node, I rebuilt it from scratch with Next.js and TypeScript for better performance. It integrates with the World Cube Association's APIs and authentication to keep competition data up to date.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -123,20 +111,14 @@ export const DATA = {
         "Lottie JSON",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://cubingkerala.org",
-          icon: <Icons.globe className="size-3" />,
-        },
+        { type: "Website", href: "https://cubingkerala.org", icon: "globe" },
         {
           type: "Source",
           href: "https://github.com/cubingkeralaorg/cubingkerala",
-          icon: <Icons.github className="size-3" />,
+          icon: "github",
         },
       ],
       image: "/cubingkerala.png",
-      width: 1080,
-      height: 1080,
     },
     {
       title: "SpeedCubers India",
@@ -145,7 +127,7 @@ export const DATA = {
       dates: "March 2025 - Present",
       active: true,
       description:
-        "Building the web platform for SpeedCubers India as part of a small team. I handle most of the frontend and chip in on the backend. The app features national rankings for Indian cubers and a live competition feed. We&apos;re working towards launch and WCA regional recognition.",
+        "Building the web platform for SpeedCubers India as part of a small team. I handle most of the frontend and chip in on the backend. The app features national rankings for Indian cubers and a live competition feed. We're working towards launch and WCA regional recognition.",
       technologies: [
         "Next.js",
         "TypeScript",
@@ -161,17 +143,15 @@ export const DATA = {
         {
           type: "Website",
           href: "https://speedcubersindia.com/",
-          icon: <Icons.globe className="size-3" />,
+          icon: "globe",
         },
         {
           type: "Source",
           href: "https://github.com/Speed-Cubers-India",
-          icon: <Icons.github className="size-3" />,
+          icon: "github",
         },
       ],
       image: "/sci.png",
-      width: 1080,
-      height: 1080,
     },
     {
       title: "OhShift",
@@ -193,17 +173,15 @@ export const DATA = {
         {
           type: "Website",
           href: "https://ohshift.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
+          icon: "globe",
         },
         {
           type: "Source",
           href: "https://github.com/allenjohn07/OhShift",
-          icon: <Icons.github className="size-3" />,
+          icon: "github",
         },
       ],
       image: "/OhShift.png",
-      width: 1080,
-      height: 1080,
     },
   ],
   cubing: [
@@ -227,6 +205,6 @@ export const DATA = {
       title: "Frontend Lead",
       start: "2023",
       end: "Present",
-    }
-  ]
+    },
+  ],
 } as const;

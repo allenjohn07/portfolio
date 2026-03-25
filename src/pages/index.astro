@@ -1,0 +1,123 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
+import ResumeCard from '@/components/ResumeCard.astro';
+import Badge from '@/components/Badge.astro';
+import ThemeToggle from '@/components/ThemeToggle.astro';
+import { DATA } from '@/data/resume';
+---
+
+<BaseLayout>
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero fade-in" style="animation-delay: 0s">
+        <div class="hero-text">
+          <h1>Hi, I'm {DATA.name.split(' ')[0]}</h1>
+          <p class="hero-desc">{DATA.description}</p>
+        </div>
+        <img
+          src={DATA.avatarUrl}
+          alt={DATA.name}
+          class="avatar"
+          width="112"
+          height="112"
+          loading="eager"
+        />
+      </div>
+      <hr class="divider fade-in" style="animation-delay: 0.05s" />
+    </section>
+
+    <!-- About -->
+    <section id="about" class="fade-in" style="animation-delay: 0.12s">
+      <h2>About</h2>
+      <div class="about-text" set:html={DATA.summary
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+        .replace(/^/, '<p>')
+        .concat('</p>')}
+      />
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="fade-in" style="animation-delay: 0.2s">
+      <h2>Education</h2>
+      <div class="card-list">
+        {DATA.education.map((edu) => (
+          <ResumeCard
+            title={edu.school}
+            url={edu.url}
+            subtitle={edu.degree}
+            period={`${edu.start} - ${edu.end}`}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in" style="animation-delay: 0.28s">
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <span class="skill-group-label">Frontend</span>
+        <div class="badge-list">
+          {DATA.frontendSkills.map((skill) => <Badge label={skill} />)}
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-group-label">Backend</span>
+        <div class="badge-list">
+          {DATA.backendSkills.map((skill) => <Badge label={skill} />)}
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in" style="animation-delay: 0.36s">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        {DATA.projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            dates={project.dates}
+            tags={project.technologies}
+            image={project.image}
+            links={project.links}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Cubing -->
+    <section id="cubing" class="fade-in" style="animation-delay: 0.44s">
+      <h2>Cubing</h2>
+      <div class="card-list">
+        {DATA.cubing.map((item) => (
+          <ResumeCard
+            title={item.organization}
+            url={item.url}
+            subtitle={item.title}
+            period={`${item.start} - ${item.end}`}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-in" style="animation-delay: 0.52s">
+      <div class="contact-row">
+        <p>
+          Connect me on{' '}
+          <a href={DATA.contact.social.LinkedIn.url} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          {' or '}
+          <a href={DATA.contact.social.GitHub.url} target="_blank" rel="noopener noreferrer">Github</a>
+        </p>
+        <div class="contact-right">
+          <a href="/blog/" class="blog-link">Blog</a>
+          <ThemeToggle />
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
