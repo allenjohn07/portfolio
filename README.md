@@ -1,37 +1,28 @@
 # allenjohn.me
 
-My personal portfolio and blog, built with [Astro](https://astro.build/).
+Source code for my personal portfolio and blog.
 
 ## Stack
+- **Astro**
+- **Vanilla CSS**
+- **Content Collections**
+- **GitHub Pages**
 
-- **Astro** — zero-JS static site generator
-- **Vanilla CSS** — no frameworks, no runtime
-- **Content Collections** — type-safe Markdown blog
-- **GitHub Pages** — deployment via GitHub Actions
-
-## Development
-
+## Dev
 ```bash
 npm install
-npm run dev       # http://localhost:4321
-npm run build     # builds to ./dist
-npm run preview   # preview production build
+npm run dev
 ```
 
 ## Blog
-
-Create a `.md` file in `src/content/blog/`:
+To write a post, I add a `.md` file to `src/content/blog/`:
 
 ```markdown
 ---
 title: "Post Title"
-description: "Short description"
+description: ""
 date: 2026-03-24
 tags: ["tag"]
-draft: false
+draft: true
 ---
-
-Your content here...
 ```
-
-Set `draft: true` to hide while writing, `false` to publish.
