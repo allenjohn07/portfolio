@@ -1,47 +1,37 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# allenjohn.dev
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+My personal portfolio and blog, built with [Astro](https://astro.build/).
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## Stack
 
-# Features
+- **Astro** — zero-JS static site generator
+- **Vanilla CSS** — no frameworks, no runtime
+- **Content Collections** — type-safe Markdown blog
+- **GitHub Pages** — deployment via GitHub Actions
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Development
 
-# Getting Started Locally
+```bash
+npm install
+npm run dev       # http://localhost:4321
+npm run build     # builds to ./dist
+npm run preview   # preview production build
+```
 
-1. Clone this repository to your local machine:
+## Blog
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+Create a `.md` file in `src/content/blog/`:
 
-2. Move to the cloned directory
+```markdown
+---
+title: "Post Title"
+description: "Short description"
+date: 2026-03-24
+tags: ["tag"]
+draft: false
+---
 
-   ```bash
-   cd portfolio
-   ```
+Your content here...
+```
 
-3. Install dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Set `draft: true` to hide while writing, `false` to publish.
