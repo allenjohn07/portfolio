@@ -1,4 +1,4 @@
-# allenjohn.dev
+# allenjohn.me
 
 My personal portfolio and blog, built with [Astro](https://astro.build/).
 
