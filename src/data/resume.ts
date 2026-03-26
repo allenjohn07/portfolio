@@ -1,12 +1,12 @@
 export const DATA = {
   name: "Allen John",
   initials: "AJ",
-  url: "https://allenjohn07.github.io/",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  url: "https://allenjohn.me",
+  location: "Calgary, AB",
+  locationLink: "https://www.google.com/maps/place/Calgary,+AB",
   description: "Full stack developer, Speedcuber",
   summary:
-    "I'm a full-stack developer currently studying Software Development at SAIT in Calgary. I started out with a CS degree back in India, took a detour into film editing for a bit, and eventually found my way back to code, this time for real.\n\nAfter a MERN stack course and an internship, things started clicking. Now I spend most of my time building projects with Next.js, TypeScript, and whatever else the project needs. I also help maintain [Cubing Kerala](https://cubingkerala.org) and work on the [SpeedCubers India](https://speedcubersindia.com/) platform.\n\nOutside of code, I'm a competitive speedcuber. I can solve a Rubik's Cube in under 10 seconds.",
+    "I'm an aspiring software developer currently living in Calgary and studying Software Development at SAIT. \n\nI have a degree in Computer Applications, took a detour into video editing for a bit, and eventually found my way back to programming. Turns out I actually enjoy it when I give it a proper chance. I did a MERN stack course back in India, which got me serious about web development, and that led me to coming to Canada for further studies. Still learning, still figuring things out, but I pick things up pretty quickly once something interests me. With AI changing how software is built, I'm trying to focus on problem-solving and system thinking rather than just writing code. Let's see where it all goes.",
   avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
