@@ -463,7 +463,6 @@ section h2 {
 }
 
 .blog-link {
-  font-size: 0.875rem;
   transition: color 0.2s;
 }
 
@@ -685,6 +684,12 @@ main {
 @media (max-width: 640px) {
   main {
     gap: 1.5rem;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
 
