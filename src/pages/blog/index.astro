@@ -10,7 +10,6 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   <main>
     <section>
       <a href="/" class="back-link">← Back home</a>
-      <h1 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem;">Blog</h1>
 
       {posts.length === 0 ? (
         <div class="empty-state">

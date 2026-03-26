@@ -1,13 +1,9 @@
 export const DATA = {
   name: "Allen John",
-  initials: "AJ",
   url: "https://allenjohn.me",
-  location: "Calgary, AB",
-  locationLink: "https://www.google.com/maps/place/Calgary,+AB",
   description: "Full stack developer, Speedcuber",
   summary:
     "I'm an aspiring software developer currently living in Calgary and studying Software Development at SAIT. \n\nI have a degree in Computer Applications, took a detour into video editing for a bit, and eventually found my way back to programming. Turns out I actually enjoy it when I give it a proper chance. I did a MERN stack course back in India, which got me serious about web development, and that led me to coming to Canada for further studies. Still learning, still figuring things out, but I pick things up pretty quickly once something interests me. With AI changing how software is built, I'm trying to focus on problem-solving and system thinking rather than just writing code. Let's see where it all goes.",
-  avatarUrl: "/allen-profile.png",
   frontendSkills: [
     "Next.js",
     "TypeScript",
@@ -29,44 +25,13 @@ export const DATA = {
   contact: {
     social: {
       GitHub: {
-        name: "GitHub",
         url: "https://github.com/allenjohn07",
-        navbar: true,
       },
       LinkedIn: {
-        name: "LinkedIn",
         url: "https://www.linkedin.com/in/allenjohn07/",
-        navbar: true,
       },
     },
   },
-  work: [
-    {
-      company: "Freelance",
-      badges: [],
-      location: "Remote",
-      title: "Freelance Web developer",
-      logoUrl: "",
-      start: "Sept 2023",
-      end: "Present",
-    },
-    {
-      company: "Luminar Technohub",
-      badges: [],
-      location: "Kakkanad, Kochi",
-      title: "Full stack developer - Intern",
-      start: "June 2024",
-      end: "Sept 2024",
-    },
-    {
-      company: "Luminar Technolab",
-      badges: [],
-      location: "Kakkanad, Kochi",
-      title: "MEA(R)N Stack - Course",
-      start: "Sept 2023",
-      end: "March 2024",
-    },
-  ],
   education: [
     {
       school: "Southern Alberta Institute of Technology",
@@ -81,12 +46,6 @@ export const DATA = {
       degree: "Bachelor of Science in Computer Application",
       start: "2019",
       end: "2022",
-    },
-  ],
-  certificates: [
-    {
-      name: "NACTET",
-      grade: "A+",
     },
   ],
   projects: [
