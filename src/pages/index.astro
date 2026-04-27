@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import ProjectCard from '@/components/ProjectCard.astro';
+import ProjectListHover from '@/components/ProjectListHover.astro';
 import ResumeCard from '@/components/ResumeCard.astro';
 import Badge from '@/components/Badge.astro';
 import ThemeToggle from '@/components/ThemeToggle.astro';
@@ -49,36 +49,24 @@ import { DATA } from '@/data/resume';
     <!-- Skills -->
     <section id="skills" class="fade-in" style="animation-delay: 0.28s">
       <h2>Skills</h2>
-      <div class="skill-group">
-        <span class="skill-group-label">Frontend</span>
-        <div class="badge-list">
-          {DATA.frontendSkills.map((skill) => <Badge label={skill} />)}
-        </div>
-      </div>
-      <div class="skill-group">
-        <span class="skill-group-label">Backend</span>
-        <div class="badge-list">
-          {DATA.backendSkills.map((skill) => <Badge label={skill} />)}
-        </div>
+      <div class="skills-container">
+        {DATA.skills.map((category) => (
+          <div class="skill-category">
+            <h3 class="skill-category-title">{category.category}</h3>
+            <div class="badge-list">
+              {category.items.map((item) => (
+                <Badge label={item} />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="fade-in" style="animation-delay: 0.36s">
       <h2>Projects</h2>
-      <div class="project-grid">
-        {DATA.projects.map((project) => (
-          <ProjectCard
-            title={project.title}
-            subtitle={project.subtitle}
-            description={project.description}
-            dates={project.dates}
-            tags={project.technologies}
-            image={project.image}
-            links={project.links}
-          />
-        ))}
-      </div>
+      <ProjectListHover projects={DATA.projects} />
     </section>
 
     <!-- Cubing -->

@@ -1,0 +1,65 @@
+---
+import Icon from './Icon.astro';
+
+interface Project {
+  title: string;
+  subtitle?: string;
+  description: string;
+  dates: string;
+  technologies: readonly string[];
+  image?: string;
+  href?: string;
+  links?: readonly { icon: string; type: string; href: string }[];
+}
+
+interface Props {
+  projects: readonly Project[];
+}
+
+const { projects } = Astro.props;
+---
+
+<div class="projects-wrapper">
+  <div class="projects-list">
+    {projects.map((project) => (
+      <div class="project-item-new">
+        {project.image && (
+          <div class="project-image-wrapper">
+            <img class="project-img" src={project.image} alt={project.title} loading="lazy" />
+          </div>
+        )}
+
+        <div class="project-main">
+          <div class="project-header-new">
+            <h3 class="project-title-new">
+              {project.href ? (
+                <a href={project.href} target="_blank" rel="noopener noreferrer">{project.title}</a>
+              ) : (
+                project.title
+              )}
+            </h3>
+            <span class="project-date-new">{project.dates}</span>
+          </div>
+          <p class="project-desc-new">{project.description}</p>
+          
+          <div class="project-meta-new">
+            <div class="project-tags-new">
+              {project.technologies.map((tag) => (
+                <span class="project-tag-new">{tag}</span>
+              ))}
+            </div>
+
+            <div class="project-links-new">
+              {project.links?.map((link) => (
+                <a href={link.href} target="_blank" rel="noopener noreferrer" class="project-link-new">
+                  <Icon name={link.icon} />
+                  <span>{link.type}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
