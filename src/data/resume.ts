@@ -181,7 +181,7 @@ export const DATA = {
     {
       organization: "Cubing Kerala",
       url: "https://cubingkerala.org/",
-      title: "Core Member and Website Maintainer",
+      title: "Core Member and Website Creator/Maintainer",
       start: "2017",
       end: "Present",
     },
